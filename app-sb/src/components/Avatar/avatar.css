@@ -1,0 +1,19 @@
+.avatar-sb{
+    border-radius: 5rem;
+    object-fit: cover;
+}
+
+.storybook-avatar--small{
+    width: 3em;
+    height: 3em;
+}
+
+.storybook-avatar--medium{
+    width: 5em;
+    height: 5em;
+}
+
+.storybook-avatar--large{
+    width: 7em;
+    height: 7em;
+}

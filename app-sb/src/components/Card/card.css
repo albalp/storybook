@@ -1,0 +1,43 @@
+.storybook-card {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.storybook-card--color {
+  border: #15862e solid;
+}
+
+.storybook-card--sizeSmall {
+  font-size: 12px;
+  width: 60vh;
+  height: 30vh;
+  border: #5a5a5a solid;
+}
+.storybook-card--sizeMedium {
+  font-size: 14px;
+  width: 70vh;
+  height: 40vh;
+  border: #5a5a5a solid;
+}
+.storybook-card--sizeLarge {
+  font-size: 16px;
+  width: 80vh;
+  height: 50vh;
+  border: #5a5a5a solid;
+}
+.storybook-card--borderRadiusSmall {
+    border: #5a5a5a solid;
+
+  
+  border-radius: 10px;
+}
+.storybook-card--borderRadiusMedium {
+  border-radius: 20px;
+
+  border: #5a5a5a solid;
+
+}
+.storybook-card--borderRadiusLarge {
+  border-radius: 30px;
+ 
+  border: #5a5a5a solid;
+}
