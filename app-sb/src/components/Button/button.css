@@ -8,6 +8,8 @@
   line-height: 1;
   width: 6rem;
   height:2.75rem;
+  outline: none;
+  border: 1px solid transparent;
 }
 .storybook-button--primary {
   color: #FFFFFF;
