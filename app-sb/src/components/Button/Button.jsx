@@ -52,3 +52,9 @@ Button.defaultProps = {
   size: '',
   onClick: undefined,
 };
+
+// utilizar el addon sobre documentar addon docs, tipos de datos, comentarios, 
+// arc type 
+// Modificar los controles 
+// configuracion en la instalacion 
+// archivos existentes jsx tsx mdx
