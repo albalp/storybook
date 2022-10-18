@@ -5,15 +5,18 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+export const Button = ({ primary, backgroundColor, size, label, icon, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const iconMode = icon ? 'storybook-button--icon' : 'storybook-button';
+
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
+      className={['storybook-button', `storybook-button--${size}`, mode, iconMode].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >
+      {icon && icon}
       {label}
     </button>
   );
@@ -35,7 +38,8 @@ Button.propTypes = {
   /**
    * Button contents
    */
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  icon: PropTypes.element,
   /**
    * Optional click handler
    */
@@ -45,6 +49,6 @@ Button.propTypes = {
 Button.defaultProps = {
   backgroundColor: null,
   primary: false,
-  size: 'medium',
+  size: '',
   onClick: undefined,
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Button } from '../components/Button/Button';
+import { AiFillCode } from "react-icons/ai";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -37,4 +38,16 @@ export const Small = Template.bind({});
 Small.args = {
   size: 'small',
   label: 'Button',
+  // icon: <AiFillCode />
 };
+
+export const Medium = Template.bind({});
+Medium.args = {
+  size: 'medium',
+  label: 'Button',
+};
+
+export const ButtonIcon = Template.bind({});
+ButtonIcon.args = {
+  icon: <AiFillCode/>
+}
